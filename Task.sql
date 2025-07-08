@@ -52,7 +52,7 @@ INSERT INTO customer (first_name, last_name, email, created_date, updated_date, 
  INSERT INTO customer
  VALUES(1,'hardik','pandya','hardik@gmail.com',now(),null,true);
  
-
+ 
 CREATE TABLE orders(
     order_id SERIAL PRIMARY KEY,
     customer_id INTEGER NOT NULL REFERENCES customer(customer_id),
